@@ -39,7 +39,7 @@ No installation needed beyond the app itself:
 | Windows (`Piazzi-windows-x64.zip`) | Windows 10 1803+ 64-bit, OpenGL 3.0+ · **not yet tested on real Windows hardware** |
 | Linux (`.AppImage`) | glibc ≥ 2.35 (Ubuntu 22.04+), libGL/X11 or Wayland, `libfuse2` |
 | iPhone / iPad | iOS 17+ (build with Xcode for now) |
-| Web | modern browser + `python3 web/serve.py` (Python 3, standard library only) |
+| Web | **https://datamonkeys.ai/piazzi/app/** (nothing to install), or locally with `python3 web/serve.py` (Python 3, standard library only) |
 
 > **Windows build: not yet tested.** It is cross-compiled and packaged automatically, but nobody has run it on a
 > real Windows PC yet. If you try it, please open an issue with what happened.

@@ -4,7 +4,7 @@ const $ = (s) => document.querySelector(s);
 const el = (t, cls, html) => { const e = document.createElement(t); if (cls) e.className = cls; if (html !== undefined) e.innerHTML = html; return e; };
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const C = { amber: '#ffb547', red: '#ff5c4f', cyan: '#80d4ff', green: '#9be564', white: '#ffffff' };
-const proxy = (u) => '/proxy?u=' + encodeURIComponent(u);
+const proxy = (u) => 'proxy?u=' + encodeURIComponent(u); // relative: works at / (serve.py) and under /piazzi/app/
 
 // ---------------------------------------------------------------- background: star chart
 function drawChart(cv, seed = 7, vignette = true) {

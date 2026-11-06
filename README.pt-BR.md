@@ -37,7 +37,7 @@ English: [README.md](README.md)
 | Windows (`Piazzi-windows-x64.zip`) | Windows 10 1803+ 64 bits, OpenGL 3.0+ · **ainda não testado em um Windows real** |
 | Linux (`.AppImage`) | glibc ≥ 2.35 (Ubuntu 22.04+), libGL/X11 ou Wayland, `libfuse2` |
 | iPhone / iPad | iOS 17+ (por enquanto, compilando no Xcode) |
-| Web | navegador moderno + `python3 web/serve.py` (só a biblioteca padrão do Python) |
+| Web | **https://datamonkeys.ai/piazzi/app/** (sem instalar nada), ou localmente com `python3 web/serve.py` (só a biblioteca padrão do Python) |
 
 > **Build do Windows: ainda não testado.** Ele é compilado e empacotado automaticamente, mas ninguém o rodou ainda
 > em um PC com Windows. Se você testar, abra uma issue contando o que aconteceu.
