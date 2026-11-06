@@ -37,7 +37,7 @@ jobs:
           cmake -S cpp -B cpp/build -G Ninja -DCMAKE_BUILD_TYPE=Release -DASTRO_FETCH_SDL2=ON
           cmake --build cpp/build
       - name: Tests (ctest)
-        run: ctest --test-dir cpp/build --output-on-failure
+        run: ctest --test-dir cpp/build --output-on-failure --timeout 900
       - name: Accuracy against JPL Horizons
         if: runner.os != 'Windows'
         run: bash cpp/tests/accuracy.sh

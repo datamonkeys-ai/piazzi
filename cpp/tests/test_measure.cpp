@@ -10,6 +10,7 @@
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
+#include <filesystem>
 #include <fstream>
 #include <string>
 #include <vector>
@@ -179,8 +180,8 @@ int main(int argc, char **argv) {
     astro_free(s);
     // ---------------------------------------------------------------- synthetic dark / flat
     {
-        std::string d = "/tmp/astro_test_measure";
-        std::system(("mkdir -p " + d).c_str());
+        std::string d = (std::filesystem::temp_directory_path() / "astro_test_measure").string();
+        std::filesystem::create_directories(d);
         int w = 8, h = 6;
         std::vector<int> li(w * h), dk(w * h, 100), fl(w * h);
         for (int i = 0; i < w * h; ++i) {
