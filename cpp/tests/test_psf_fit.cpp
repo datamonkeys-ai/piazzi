@@ -6,6 +6,7 @@
 #include "../src/reduce_internal.hpp"
 #include "piazzi/core.hpp"
 
+#include <algorithm>
 #include <cmath>
 #include <cstdint>
 #include <cstdio>

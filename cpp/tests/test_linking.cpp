@@ -11,6 +11,7 @@
 #include "piazzi/core.hpp"
 #include "piazzi/reduce.hpp"
 
+#include <algorithm>
 #include <cmath>
 #include <cstdio>
 #include <random>
