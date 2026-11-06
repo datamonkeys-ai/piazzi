@@ -1,0 +1,13 @@
+# Verificações focadas em bugs e desempenho; regras de estilo ruidosas ficam de fora.
+Checks: >
+  -*,
+  bugprone-*,
+  performance-*,
+  -bugprone-easily-swappable-parameters,
+  -bugprone-narrowing-conversions,
+  -bugprone-implicit-widening-of-multiplication-result,
+  -bugprone-branch-clone,
+  -bugprone-magic-numbers,
+  -performance-avoid-endl
+WarningsAsErrors: ''
+HeaderFilterRegex: '(src|include|gui)/.*'

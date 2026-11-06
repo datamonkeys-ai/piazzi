@@ -1,0 +1,11 @@
+.git
+.venv
+official
+**/build
+build-*
+cpp/build*
+dist
+ios
+re_work
+**/__pycache__
+.env

@@ -1,0 +1,2587 @@
+{
+ "label": "ztf-cego-v8",
+ "piazzi": "cpp/build/piazzi",
+ "git": "c7db3ab",
+ "date": "2026-11-05 20:02",
+ "fields": "tools/benchmark/fields_test.json",
+ "settings": {
+  "focal_length_mm": "3063",
+  "pixel_width_mm": "0.015",
+  "pixel_height_mm": "0.015",
+  "mpc_code": "I41",
+  "time_reference": "0",
+  "catalog_faint_mag": "19.0",
+  "saturation": "60000",
+  "observer": "ZTF",
+  "measurer": "Piazzi benchmark",
+  "submitter": "Piazzi benchmark",
+  "telescope": "1.2-m f/2.4 Schmidt + CCD"
+ },
+ "results": [
+  {
+   "id": "ztf_20200405_f756_c15_q1_r",
+   "target": {
+    "num": "-",
+    "name": "2020 FW4",
+    "V": 18.6,
+    "rate_arcsec_min": 15.761,
+    "dra_h": -5.36667,
+    "ddec_h": 945.6218,
+    "cls": "NEA>Apollo",
+    "V_horizons": 17.992,
+    "source": "horizons"
+   },
+   "detected": true,
+   "status": "ok",
+   "tracks": [
+    {
+     "trk": "PCEMQ00/#1",
+     "n": 3,
+     "assoc": "2020 FW4",
+     "assoc_sep": 0.33,
+     "meas": [
+      {
+       "obsTime": "2020-04-05T08:50:02.001Z",
+       "dra": 0.047,
+       "ddec": 0.114,
+       "abs": 0.123,
+       "rmsRA": 0.054,
+       "rmsDec": 0.107,
+       "ratio": 1.027,
+       "mag": 17.1,
+       "logSNR": 1.2,
+       "sig_eph_ra": 0.084,
+       "sig_eph_dec": 0.1027,
+       "ratio_c": 0.689
+      },
+      {
+       "obsTime": "2020-04-05T09:16:59.003Z",
+       "dra": 0.062,
+       "ddec": 0.163,
+       "abs": 0.175,
+       "rmsRA": 0.048,
+       "rmsDec": 0.111,
+       "ratio": 1.446,
+       "mag": 17.2,
+       "logSNR": 1.16,
+       "sig_eph_ra": 0.0873,
+       "sig_eph_dec": 0.1033,
+       "ratio_c": 0.964
+      },
+      {
+       "obsTime": "2020-04-05T09:20:26.000Z",
+       "dra": 0.022,
+       "ddec": 0.126,
+       "abs": 0.128,
+       "rmsRA": 0.056,
+       "rmsDec": 0.13,
+       "ratio": 0.902,
+       "mag": 17.2,
+       "logSNR": 1.17,
+       "sig_eph_ra": 0.088,
+       "sig_eph_dec": 0.1037,
+       "ratio_c": 0.651
+      }
+     ]
+    }
+   ],
+   "false_positives": 0,
+   "catalog_source": "noirlab",
+   "piazzi_seconds": 2.42,
+   "plates": [
+    {
+     "img": 1,
+     "ndet": 200,
+     "nref": 97,
+     "nmatch": 104,
+     "dra": 0.05,
+     "dde": 0.04
+    },
+    {
+     "img": 2,
+     "ndet": 198,
+     "nref": 96,
+     "nmatch": 103,
+     "dra": 0.05,
+     "dde": 0.05
+    },
+    {
+     "img": 3,
+     "ndet": 193,
+     "nref": 100,
+     "nmatch": 103,
+     "dra": 0.05,
+     "dde": 0.06
+    }
+   ],
+   "returncode": 0,
+   "movers": [
+    [
+     15.76,
+     359.7
+    ]
+   ],
+   "nrefs": [
+    97,
+    96,
+    100
+   ],
+   "seconds": 2.45
+  },
+  {
+   "id": "ztf_20190325_f525_c12_q2_gir",
+   "target": {
+    "num": "-",
+    "name": "2019 FT",
+    "V": 21.0,
+    "rate_arcsec_min": 13.43,
+    "dra_h": -799.989,
+    "ddec_h": -96.6882,
+    "cls": "NEA>Apollo",
+    "V_horizons": 18.86,
+    "source": "horizons"
+   },
+   "detected": true,
+   "status": "ok",
+   "tracks": [
+    {
+     "trk": "P0RNP00/#1",
+     "n": 4,
+     "assoc": "Noshiro",
+     "assoc_sep": 1.99,
+     "meas": [
+      {
+       "obsTime": "2019-03-25T07:01:52.004Z",
+       "dra": 0.059,
+       "ddec": 0.087,
+       "abs": 0.105,
+       "rmsRA": 0.045,
+       "rmsDec": 0.071,
+       "ratio": 1.254,
+       "mag": 17.5,
+       "logSNR": 1.28,
+       "sig_eph_ra": 0.0003,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 1.254
+      },
+      {
+       "obsTime": "2019-03-25T07:35:56.997Z",
+       "dra": 0.006,
+       "ddec": -0.007,
+       "abs": 0.009,
+       "rmsRA": 0.038,
+       "rmsDec": 0.029,
+       "ratio": 0.193,
+       "mag": 17.6,
+       "logSNR": 1.48,
+       "sig_eph_ra": 0.0003,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 0.193
+      },
+      {
+       "obsTime": "2019-03-25T07:37:16.001Z",
+       "dra": -0.001,
+       "ddec": 0.032,
+       "abs": 0.032,
+       "rmsRA": 0.028,
+       "rmsDec": 0.038,
+       "ratio": 0.676,
+       "mag": 17.6,
+       "logSNR": 1.45,
+       "sig_eph_ra": 0.0003,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 0.676
+      },
+      {
+       "obsTime": "2019-03-25T08:03:15.003Z",
+       "dra": 0.002,
+       "ddec": -0.065,
+       "abs": 0.065,
+       "rmsRA": 0.058,
+       "rmsDec": 0.118,
+       "ratio": 0.492,
+       "mag": 17.6,
+       "logSNR": 1.24,
+       "sig_eph_ra": 0.0003,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 0.492
+      }
+     ]
+    },
+    {
+     "trk": "P0RNP01/#2",
+     "n": 4,
+     "assoc": "1999 XB139",
+     "assoc_sep": 1.64,
+     "meas": [
+      {
+       "obsTime": "2019-03-25T07:01:52.004Z",
+       "dra": -0.14,
+       "ddec": -0.112,
+       "abs": 0.179,
+       "rmsRA": 0.075,
+       "rmsDec": 0.093,
+       "ratio": 1.501,
+       "mag": 18.4,
+       "logSNR": 1.02,
+       "sig_eph_ra": 0.001,
+       "sig_eph_dec": 0.0007,
+       "ratio_c": 1.501
+      },
+      {
+       "obsTime": "2019-03-25T07:35:56.997Z",
+       "dra": 0.003,
+       "ddec": 0.041,
+       "abs": 0.042,
+       "rmsRA": 0.049,
+       "rmsDec": 0.043,
+       "ratio": 0.638,
+       "mag": 18.3,
+       "logSNR": 1.15,
+       "sig_eph_ra": 0.001,
+       "sig_eph_dec": 0.0007,
+       "ratio_c": 0.638
+      },
+      {
+       "obsTime": "2019-03-25T07:37:16.001Z",
+       "dra": -0.014,
+       "ddec": -0.056,
+       "abs": 0.058,
+       "rmsRA": 0.043,
+       "rmsDec": 0.049,
+       "ratio": 0.891,
+       "mag": 18.3,
+       "logSNR": 1.14,
+       "sig_eph_ra": 0.001,
+       "sig_eph_dec": 0.0007,
+       "ratio_c": 0.89
+      },
+      {
+       "obsTime": "2019-03-25T08:03:15.003Z",
+       "dra": -0.093,
+       "ddec": 0.082,
+       "abs": 0.123,
+       "rmsRA": 0.064,
+       "rmsDec": 0.12,
+       "ratio": 0.907,
+       "mag": 18.4,
+       "logSNR": 1.01,
+       "sig_eph_ra": 0.001,
+       "sig_eph_dec": 0.0007,
+       "ratio_c": 0.907
+      }
+     ]
+    },
+    {
+     "trk": "P0RNP02/#3",
+     "n": 4,
+     "assoc": "2019 FT",
+     "assoc_sep": 0.46,
+     "meas": [
+      {
+       "obsTime": "2019-03-25T07:01:52.004Z",
+       "dra": 0.334,
+       "ddec": -0.012,
+       "abs": 0.334,
+       "rmsRA": 0.213,
+       "rmsDec": 0.136,
+       "ratio": 1.322,
+       "mag": 18.2,
+       "logSNR": 0.9,
+       "sig_eph_ra": 0.1803,
+       "sig_eph_dec": 0.086,
+       "ratio_c": 1.037
+      },
+      {
+       "obsTime": "2019-03-25T07:35:56.997Z",
+       "dra": -0.044,
+       "ddec": -0.066,
+       "abs": 0.079,
+       "rmsRA": 0.158,
+       "rmsDec": 0.063,
+       "ratio": 0.464,
+       "mag": 18.0,
+       "logSNR": 1.08,
+       "sig_eph_ra": 0.1783,
+       "sig_eph_dec": 0.0857,
+       "ratio_c": 0.303
+      },
+      {
+       "obsTime": "2019-03-25T07:37:16.001Z",
+       "dra": -0.318,
+       "ddec": 0.018,
+       "abs": 0.319,
+       "rmsRA": 0.13,
+       "rmsDec": 0.061,
+       "ratio": 2.219,
+       "mag": 18.1,
+       "logSNR": 1.09,
+       "sig_eph_ra": 0.1783,
+       "sig_eph_dec": 0.0857,
+       "ratio_c": 1.303
+      },
+      {
+       "obsTime": "2019-03-25T08:03:15.003Z",
+       "dra": -0.389,
+       "ddec": 0.026,
+       "abs": 0.39,
+       "rmsRA": 0.341,
+       "rmsDec": 0.25,
+       "ratio": 0.922,
+       "mag": 18.5,
+       "logSNR": 0.77,
+       "sig_eph_ra": 0.177,
+       "sig_eph_dec": 0.0857,
+       "ratio_c": 0.836
+      }
+     ]
+    }
+   ],
+   "false_positives": 0,
+   "catalog_source": "noirlab",
+   "piazzi_seconds": 4.89,
+   "plates": [
+    {
+     "img": 1,
+     "ndet": 322,
+     "nref": 141,
+     "nmatch": 147,
+     "dra": 0.05,
+     "dde": 0.08
+    },
+    {
+     "img": 2,
+     "ndet": 568,
+     "nref": 162,
+     "nmatch": 175,
+     "dra": 0.04,
+     "dde": 0.04
+    },
+    {
+     "img": 3,
+     "ndet": 556,
+     "nref": 169,
+     "nmatch": 175,
+     "dra": 0.04,
+     "dde": 0.04
+    },
+    {
+     "img": 4,
+     "ndet": 521,
+     "nref": 177,
+     "nmatch": 180,
+     "dra": 0.05,
+     "dde": 0.11
+    }
+   ],
+   "returncode": 0,
+   "movers": [
+    [
+     0.58,
+     293.5
+    ],
+    [
+     0.57,
+     291.5
+    ],
+    [
+     13.45,
+     263.1
+    ]
+   ],
+   "nrefs": [
+    141,
+    162,
+    169,
+    177
+   ],
+   "seconds": 4.97
+  },
+  {
+   "id": "ztf_20230125_f465_c11_q3_gir",
+   "target": {
+    "num": "367789",
+    "name": "2011 AG5",
+    "V": 18.0,
+    "rate_arcsec_min": 2.968,
+    "dra_h": 164.5581,
+    "ddec_h": -67.9923,
+    "cls": "NEA>Apollo",
+    "V_horizons": 16.284,
+    "source": "horizons"
+   },
+   "detected": false,
+   "status": "ok",
+   "tracks": [],
+   "false_positives": 0,
+   "catalog_source": "noirlab",
+   "piazzi_seconds": 4.8,
+   "plates": [
+    {
+     "img": 1,
+     "ndet": 714,
+     "nref": 278,
+     "nmatch": 303,
+     "dra": 0.04,
+     "dde": 0.04
+    },
+    {
+     "img": 2,
+     "ndet": 607,
+     "nref": 283,
+     "nmatch": 299,
+     "dra": 0.05,
+     "dde": 0.04
+    },
+    {
+     "img": 3,
+     "ndet": 383,
+     "nref": 257,
+     "nmatch": 272,
+     "dra": 0.06,
+     "dde": 0.05
+    }
+   ],
+   "returncode": 0,
+   "movers": [],
+   "nrefs": [
+    278,
+    283,
+    257
+   ],
+   "seconds": 4.84
+  },
+  {
+   "id": "ztf_20230813_f544_c16_q2_gr",
+   "target": {
+    "num": "-",
+    "name": "2023 PC1",
+    "V": 19.419,
+    "rate_arcsec_min": 7.447,
+    "dra_h": -340.846,
+    "ddec_h": 288.9615,
+    "cls": "?",
+    "V_horizons": 19.419,
+    "source": "horizons"
+   },
+   "detected": false,
+   "status": "ok",
+   "tracks": [],
+   "false_positives": 0,
+   "catalog_source": "noirlab",
+   "piazzi_seconds": 3.12,
+   "plates": [
+    {
+     "img": 1,
+     "ndet": 1074,
+     "nref": 566,
+     "nmatch": 625,
+     "dra": 0.03,
+     "dde": 0.03
+    },
+    {
+     "img": 2,
+     "ndet": 1077,
+     "nref": 570,
+     "nmatch": 621,
+     "dra": 0.03,
+     "dde": 0.03
+    },
+    {
+     "img": 3,
+     "ndet": 757,
+     "nref": 522,
+     "nmatch": 565,
+     "dra": 0.05,
+     "dde": 0.04
+    }
+   ],
+   "returncode": 0,
+   "movers": [],
+   "nrefs": [
+    566,
+    570,
+    522
+   ],
+   "seconds": 3.15
+  },
+  {
+   "id": "ztf_20190727_f383_c10_q2_r",
+   "target": {
+    "num": "-",
+    "name": "2019 NX6",
+    "V": 18.0,
+    "rate_arcsec_min": 9.833,
+    "dra_h": 438.6227,
+    "ddec_h": -394.599,
+    "cls": "NEA>Apollo",
+    "V_horizons": 18.0,
+    "source": "horizons"
+   },
+   "detected": true,
+   "status": "ok",
+   "tracks": [
+    {
+     "trk": "P4LEO00/#1",
+     "n": 5,
+     "assoc": "2019 NX6",
+     "assoc_sep": 0.27,
+     "meas": [
+      {
+       "obsTime": "2019-07-27T06:24:42.003Z",
+       "dra": 0.099,
+       "ddec": -0.044,
+       "abs": 0.108,
+       "rmsRA": 0.081,
+       "rmsDec": 0.083,
+       "ratio": 0.932,
+       "mag": 17.3,
+       "logSNR": 1.45,
+       "sig_eph_ra": 0.142,
+       "sig_eph_dec": 0.1277,
+       "ratio_c": 0.484
+      },
+      {
+       "obsTime": "2019-07-27T06:39:40.001Z",
+       "dra": -0.032,
+       "ddec": 0.019,
+       "abs": 0.037,
+       "rmsRA": 0.057,
+       "rmsDec": 0.06,
+       "ratio": 0.451,
+       "mag": 17.3,
+       "logSNR": 1.6,
+       "sig_eph_ra": 0.142,
+       "sig_eph_dec": 0.1277,
+       "ratio_c": 0.179
+      },
+      {
+       "obsTime": "2019-07-27T06:43:44.997Z",
+       "dra": 0.083,
+       "ddec": -0.064,
+       "abs": 0.105,
+       "rmsRA": 0.054,
+       "rmsDec": 0.052,
+       "ratio": 1.397,
+       "mag": 17.1,
+       "logSNR": 1.62,
+       "sig_eph_ra": 0.142,
+       "sig_eph_dec": 0.1277,
+       "ratio_c": 0.51
+      },
+      {
+       "obsTime": "2019-07-27T06:46:26.997Z",
+       "dra": 0.028,
+       "ddec": -0.073,
+       "abs": 0.078,
+       "rmsRA": 0.069,
+       "rmsDec": 0.073,
+       "ratio": 0.779,
+       "mag": 17.3,
+       "logSNR": 1.56,
+       "sig_eph_ra": 0.142,
+       "sig_eph_dec": 0.1277,
+       "ratio_c": 0.362
+      },
+      {
+       "obsTime": "2019-07-27T06:52:44.004Z",
+       "dra": 0.477,
+       "ddec": -0.543,
+       "abs": 0.722,
+       "rmsRA": 0.085,
+       "rmsDec": 0.091,
+       "ratio": 5.801,
+       "mag": 17.1,
+       "logSNR": 1.58,
+       "sig_eph_ra": 0.142,
+       "sig_eph_dec": 0.1277,
+       "ratio_c": 3.169
+      }
+     ]
+    }
+   ],
+   "false_positives": 0,
+   "catalog_source": "noirlab",
+   "piazzi_seconds": 10.1,
+   "plates": [
+    {
+     "img": 1,
+     "ndet": 4243,
+     "nref": 2792,
+     "nmatch": 3268,
+     "dra": 0.06,
+     "dde": 0.06
+    },
+    {
+     "img": 2,
+     "ndet": 4415,
+     "nref": 2795,
+     "nmatch": 3331,
+     "dra": 0.05,
+     "dde": 0.05
+    },
+    {
+     "img": 3,
+     "ndet": 4378,
+     "nref": 2776,
+     "nmatch": 3306,
+     "dra": 0.05,
+     "dde": 0.06
+    },
+    {
+     "img": 4,
+     "ndet": 4090,
+     "nref": 2796,
+     "nmatch": 3288,
+     "dra": 0.06,
+     "dde": 0.07
+    },
+    {
+     "img": 5,
+     "ndet": 4056,
+     "nref": 2746,
+     "nmatch": 3300,
+     "dra": 0.06,
+     "dde": 0.07
+    }
+   ],
+   "returncode": 0,
+   "movers": [
+    [
+     9.85,
+     132.1
+    ]
+   ],
+   "nrefs": [
+    2792,
+    2795,
+    2776,
+    2796,
+    2746
+   ],
+   "seconds": 10.14
+  },
+  {
+   "id": "ztf_20190428_f715_c16_q4_gr",
+   "target": {
+    "num": "-",
+    "name": "2019 FP2",
+    "V": 18.9,
+    "rate_arcsec_min": 6.188,
+    "dra_h": 352.4674,
+    "ddec_h": 116.7089,
+    "cls": "NEA>Amor",
+    "V_horizons": 18.753,
+    "source": "horizons"
+   },
+   "detected": true,
+   "status": "ok",
+   "tracks": [
+    {
+     "trk": "P1TDQ00/#1",
+     "n": 4,
+     "assoc": "2019 FP2",
+     "assoc_sep": 0.62,
+     "meas": [
+      {
+       "obsTime": "2019-04-28T05:50:42.997Z",
+       "dra": 0.085,
+       "ddec": -0.051,
+       "abs": 0.099,
+       "rmsRA": 0.057,
+       "rmsDec": 0.054,
+       "ratio": 1.264,
+       "mag": 18.0,
+       "logSNR": 1.37,
+       "sig_eph_ra": 0.0643,
+       "sig_eph_dec": 0.039,
+       "ratio_c": 0.912
+      },
+      {
+       "obsTime": "2019-04-28T05:52:00.999Z",
+       "dra": -0.053,
+       "ddec": -0.041,
+       "abs": 0.068,
+       "rmsRA": 0.044,
+       "rmsDec": 0.035,
+       "ratio": 1.203,
+       "mag": 18.0,
+       "logSNR": 1.4,
+       "sig_eph_ra": 0.0643,
+       "sig_eph_dec": 0.039,
+       "ratio_c": 0.72
+      },
+      {
+       "obsTime": "2019-04-28T06:34:02.998Z",
+       "dra": -0.011,
+       "ddec": -0.058,
+       "abs": 0.059,
+       "rmsRA": 0.035,
+       "rmsDec": 0.031,
+       "ratio": 1.257,
+       "mag": 17.8,
+       "logSNR": 1.49,
+       "sig_eph_ra": 0.0643,
+       "sig_eph_dec": 0.039,
+       "ratio_c": 0.664
+      },
+      {
+       "obsTime": "2019-04-28T06:47:19.001Z",
+       "dra": 0.023,
+       "ddec": -0.042,
+       "abs": 0.048,
+       "rmsRA": 0.035,
+       "rmsDec": 0.029,
+       "ratio": 1.046,
+       "mag": 18.0,
+       "logSNR": 1.49,
+       "sig_eph_ra": 0.0643,
+       "sig_eph_dec": 0.039,
+       "ratio_c": 0.541
+      }
+     ]
+    }
+   ],
+   "false_positives": 0,
+   "catalog_source": "noirlab",
+   "piazzi_seconds": 2.78,
+   "plates": [
+    {
+     "img": 1,
+     "ndet": 220,
+     "nref": 54,
+     "nmatch": 62,
+     "dra": 0.05,
+     "dde": 0.04
+    },
+    {
+     "img": 2,
+     "ndet": 251,
+     "nref": 55,
+     "nmatch": 64,
+     "dra": 0.04,
+     "dde": 0.03
+    },
+    {
+     "img": 3,
+     "ndet": 388,
+     "nref": 62,
+     "nmatch": 69,
+     "dra": 0.03,
+     "dde": 0.03
+    },
+    {
+     "img": 4,
+     "ndet": 402,
+     "nref": 62,
+     "nmatch": 70,
+     "dra": 0.03,
+     "dde": 0.03
+    }
+   ],
+   "returncode": 0,
+   "movers": [
+    [
+     6.19,
+     71.6
+    ]
+   ],
+   "nrefs": [
+    54,
+    55,
+    62,
+    62
+   ],
+   "seconds": 2.82
+  },
+  {
+   "id": "ztf_20200430_f821_c11_q4_gi",
+   "target": {
+    "num": "-",
+    "name": "2020 FA7",
+    "V": 19.101,
+    "rate_arcsec_min": 9.736,
+    "dra_h": 475.2792,
+    "ddec_h": 339.6063,
+    "cls": "?",
+    "V_horizons": 19.101,
+    "source": "horizons"
+   },
+   "detected": true,
+   "status": "ok",
+   "tracks": [
+    {
+     "trk": "PD69O00/#1",
+     "n": 3,
+     "assoc": "2020 FA7",
+     "assoc_sep": 0.87,
+     "meas": [
+      {
+       "obsTime": "2020-04-30T05:48:19.997Z",
+       "dra": -0.269,
+       "ddec": -0.064,
+       "abs": 0.277,
+       "rmsRA": 0.152,
+       "rmsDec": 0.132,
+       "ratio": 1.376,
+       "mag": 18.8,
+       "logSNR": 0.67,
+       "sig_eph_ra": 0.1237,
+       "sig_eph_dec": 0.111,
+       "ratio_c": 1.061
+      },
+      {
+       "obsTime": "2020-04-30T06:14:39.000Z",
+       "dra": 0.128,
+       "ddec": 0.148,
+       "abs": 0.196,
+       "rmsRA": 0.135,
+       "rmsDec": 0.129,
+       "ratio": 1.05,
+       "mag": 18.5,
+       "logSNR": 0.71,
+       "sig_eph_ra": 0.124,
+       "sig_eph_dec": 0.111,
+       "ratio_c": 0.784
+      },
+      {
+       "obsTime": "2020-04-30T06:40:32.999Z",
+       "dra": 0.226,
+       "ddec": 0.172,
+       "abs": 0.284,
+       "rmsRA": 0.111,
+       "rmsDec": 0.095,
+       "ratio": 1.945,
+       "mag": 18.7,
+       "logSNR": 0.84,
+       "sig_eph_ra": 0.124,
+       "sig_eph_dec": 0.111,
+       "ratio_c": 1.283
+      }
+     ]
+    }
+   ],
+   "false_positives": 0,
+   "catalog_source": "noirlab",
+   "piazzi_seconds": 1.84,
+   "plates": [
+    {
+     "img": 1,
+     "ndet": 228,
+     "nref": 97,
+     "nmatch": 104,
+     "dra": 0.04,
+     "dde": 0.04
+    },
+    {
+     "img": 2,
+     "ndet": 278,
+     "nref": 115,
+     "nmatch": 120,
+     "dra": 0.03,
+     "dde": 0.05
+    },
+    {
+     "img": 3,
+     "ndet": 374,
+     "nref": 116,
+     "nmatch": 119,
+     "dra": 0.03,
+     "dde": 0.04
+    }
+   ],
+   "returncode": 0,
+   "movers": [
+    [
+     9.75,
+     54.4
+    ]
+   ],
+   "nrefs": [
+    97,
+    115,
+    116
+   ],
+   "seconds": 4.06
+  },
+  {
+   "id": "ztf_20200123_f751_c6_q2_r",
+   "target": {
+    "num": "-",
+    "name": "2020 BO1",
+    "V": 16.2,
+    "rate_arcsec_min": 20.095,
+    "dra_h": 121.7622,
+    "ddec_h": 1199.536,
+    "cls": "NEA>Apollo",
+    "V_horizons": 17.191,
+    "source": "horizons"
+   },
+   "detected": true,
+   "status": "ok",
+   "tracks": [
+    {
+     "trk": "PA5FO00/#1",
+     "n": 3,
+     "assoc": "2020 BO1",
+     "assoc_sep": 1.84,
+     "meas": [
+      {
+       "obsTime": "2020-01-23T07:00:04.004Z",
+       "dra": 0.121,
+       "ddec": -0.007,
+       "abs": 0.121,
+       "rmsRA": 0.091,
+       "rmsDec": 0.048,
+       "ratio": 1.175,
+       "mag": 16.5,
+       "logSNR": 1.82,
+       "sig_eph_ra": 0.101,
+       "sig_eph_dec": 0.1337,
+       "ratio_c": 0.615
+      },
+      {
+       "obsTime": "2020-01-23T07:38:50.998Z",
+       "dra": 0.07,
+       "ddec": -0.102,
+       "abs": 0.124,
+       "rmsRA": 0.098,
+       "rmsDec": 0.053,
+       "ratio": 1.112,
+       "mag": 16.6,
+       "logSNR": 1.79,
+       "sig_eph_ra": 0.0997,
+       "sig_eph_dec": 0.134,
+       "ratio_c": 0.617
+      },
+      {
+       "obsTime": "2020-01-23T07:40:11.998Z",
+       "dra": 0.175,
+       "ddec": -0.011,
+       "abs": 0.175,
+       "rmsRA": 0.09,
+       "rmsDec": 0.051,
+       "ratio": 1.694,
+       "mag": 16.7,
+       "logSNR": 1.78,
+       "sig_eph_ra": 0.0997,
+       "sig_eph_dec": 0.134,
+       "ratio_c": 0.892
+      }
+     ]
+    }
+   ],
+   "false_positives": 0,
+   "catalog_source": "noirlab",
+   "piazzi_seconds": 5.71,
+   "plates": [
+    {
+     "img": 1,
+     "ndet": 753,
+     "nref": 216,
+     "nmatch": 221,
+     "dra": 0.1,
+     "dde": 0.04
+    },
+    {
+     "img": 2,
+     "ndet": 779,
+     "nref": 219,
+     "nmatch": 222,
+     "dra": 0.1,
+     "dde": 0.05
+    },
+    {
+     "img": 3,
+     "ndet": 751,
+     "nref": 214,
+     "nmatch": 222,
+     "dra": 0.09,
+     "dde": 0.04
+    }
+   ],
+   "returncode": 0,
+   "movers": [
+    [
+     20.06,
+     5.7
+    ]
+   ],
+   "nrefs": [
+    216,
+    219,
+    214
+   ],
+   "seconds": 6.96
+  },
+  {
+   "id": "ztf_20201029_f404_c13_q2_gr",
+   "target": {
+    "num": "-",
+    "name": "2020 TY1",
+    "V": 18.7,
+    "rate_arcsec_min": 6.723,
+    "dra_h": 397.7096,
+    "ddec_h": 67.42435,
+    "cls": "NEA>Apollo",
+    "V_horizons": 18.447,
+    "source": "horizons"
+   },
+   "detected": true,
+   "status": "ok",
+   "tracks": [
+    {
+     "trk": "PISKV00/#1",
+     "n": 4,
+     "assoc": "2020 TY1",
+     "assoc_sep": 0.23,
+     "meas": [
+      {
+       "obsTime": "2020-10-29T07:43:04.997Z",
+       "dra": 0.174,
+       "ddec": -0.225,
+       "abs": 0.284,
+       "rmsRA": 0.143,
+       "rmsDec": 0.114,
+       "ratio": 1.553,
+       "mag": 18.0,
+       "logSNR": 0.79,
+       "sig_eph_ra": 0.0693,
+       "sig_eph_dec": 0.0603,
+       "ratio_c": 1.388
+      },
+      {
+       "obsTime": "2020-10-29T07:44:25.997Z",
+       "dra": 0.192,
+       "ddec": 0.045,
+       "abs": 0.197,
+       "rmsRA": 0.186,
+       "rmsDec": 0.187,
+       "ratio": 0.748,
+       "mag": 18.0,
+       "logSNR": 0.83,
+       "sig_eph_ra": 0.0693,
+       "sig_eph_dec": 0.0603,
+       "ratio_c": 0.706
+      },
+      {
+       "obsTime": "2020-10-29T08:14:44.000Z",
+       "dra": 0.022,
+       "ddec": 0.014,
+       "abs": 0.026,
+       "rmsRA": 0.084,
+       "rmsDec": 0.084,
+       "ratio": 0.221,
+       "mag": 17.8,
+       "logSNR": 1.19,
+       "sig_eph_ra": 0.0697,
+       "sig_eph_dec": 0.0603,
+       "ratio_c": 0.174
+      },
+      {
+       "obsTime": "2020-10-29T08:17:24.997Z",
+       "dra": -0.09,
+       "ddec": -0.094,
+       "abs": 0.131,
+       "rmsRA": 0.057,
+       "rmsDec": 0.062,
+       "ratio": 1.551,
+       "mag": 17.6,
+       "logSNR": 1.29,
+       "sig_eph_ra": 0.0697,
+       "sig_eph_dec": 0.0603,
+       "ratio_c": 1.046
+      }
+     ]
+    }
+   ],
+   "false_positives": 0,
+   "catalog_source": "noirlab",
+   "piazzi_seconds": 1.29,
+   "plates": [
+    {
+     "img": 1,
+     "ndet": 59,
+     "nref": 51,
+     "nmatch": 51,
+     "dra": 0.11,
+     "dde": 0.1
+    },
+    {
+     "img": 2,
+     "ndet": 56,
+     "nref": 45,
+     "nmatch": 50,
+     "dra": 0.06,
+     "dde": 0.06
+    },
+    {
+     "img": 3,
+     "ndet": 121,
+     "nref": 81,
+     "nmatch": 88,
+     "dra": 0.07,
+     "dde": 0.07
+    },
+    {
+     "img": 4,
+     "ndet": 117,
+     "nref": 86,
+     "nmatch": 89,
+     "dra": 0.06,
+     "dde": 0.07
+    }
+   ],
+   "returncode": 0,
+   "movers": [
+    [
+     6.72,
+     80.3
+    ]
+   ],
+   "nrefs": [
+    51,
+    45,
+    81,
+    86
+   ],
+   "seconds": 1.34
+  },
+  {
+   "id": "ztf_20200725_f753_c8_q3_gir",
+   "target": {
+    "num": "8014",
+    "name": "1990 MF",
+    "V": 17.1,
+    "rate_arcsec_min": 11.415,
+    "dra_h": -643.898,
+    "ddec_h": 233.3598,
+    "cls": "NEA>Apollo",
+    "V_horizons": 19.0,
+    "source": "horizons"
+   },
+   "detected": false,
+   "status": "ok",
+   "tracks": [],
+   "false_positives": 0,
+   "catalog_source": "noirlab",
+   "piazzi_seconds": 1.51,
+   "plates": [
+    {
+     "img": 1,
+     "ndet": 98,
+     "nref": 68,
+     "nmatch": 73,
+     "dra": 0.07,
+     "dde": 0.07
+    },
+    {
+     "img": 2,
+     "ndet": 86,
+     "nref": 60,
+     "nmatch": 62,
+     "dra": 0.06,
+     "dde": 0.08
+    },
+    {
+     "img": 3,
+     "ndet": 232,
+     "nref": 87,
+     "nmatch": 87,
+     "dra": 0.05,
+     "dde": 0.04
+    }
+   ],
+   "returncode": 0,
+   "movers": [],
+   "nrefs": [
+    68,
+    60,
+    87
+   ],
+   "seconds": 1.55
+  },
+  {
+   "id": "ztf_20191030_f607_c2_q1_r",
+   "target": {
+    "num": "59106",
+    "name": "1998 WF23",
+    "V": 18.0,
+    "rate_arcsec_min": 0.44,
+    "dra_h": -25.2838,
+    "ddec_h": -7.669,
+    "cls": "MB>Inner"
+   },
+   "detected": true,
+   "status": "ok",
+   "tracks": [
+    {
+     "trk": "P7J3500/#1",
+     "n": 5,
+     "assoc": "2000 UG90",
+     "assoc_sep": 2.36,
+     "meas": [
+      {
+       "obsTime": "2019-10-30T09:05:32.002Z",
+       "dra": 0.32,
+       "ddec": -0.06,
+       "abs": 0.326,
+       "rmsRA": 0.176,
+       "rmsDec": 0.168,
+       "ratio": 1.34,
+       "mag": 18.6,
+       "logSNR": 0.99,
+       "sig_eph_ra": 0.0257,
+       "sig_eph_dec": 0.0207,
+       "ratio_c": 1.328
+      },
+      {
+       "obsTime": "2019-10-30T09:36:32.004Z",
+       "dra": 0.045,
+       "ddec": -0.279,
+       "abs": 0.283,
+       "rmsRA": 1.712,
+       "rmsDec": 1.713,
+       "ratio": 0.117,
+       "mag": 18.6,
+       "logSNR": 1.1,
+       "sig_eph_ra": 0.0257,
+       "sig_eph_dec": 0.0207,
+       "ratio_c": 0.117
+      },
+      {
+       "obsTime": "2019-10-30T09:55:25.001Z",
+       "dra": -0.537,
+       "ddec": 0.17,
+       "abs": 0.563,
+       "rmsRA": 0.252,
+       "rmsDec": 0.269,
+       "ratio": 1.527,
+       "mag": 18.7,
+       "logSNR": 0.98,
+       "sig_eph_ra": 0.0257,
+       "sig_eph_dec": 0.0207,
+       "ratio_c": 1.521
+      },
+      {
+       "obsTime": "2019-10-30T11:03:04.004Z",
+       "dra": -0.02,
+       "ddec": 0.03,
+       "abs": 0.036,
+       "rmsRA": 0.181,
+       "rmsDec": 0.187,
+       "ratio": 0.139,
+       "mag": 18.3,
+       "logSNR": 0.81,
+       "sig_eph_ra": 0.0257,
+       "sig_eph_dec": 0.0207,
+       "ratio_c": 0.138
+      },
+      {
+       "obsTime": "2019-10-30T11:49:09.003Z",
+       "dra": 0.034,
+       "ddec": 0.078,
+       "abs": 0.085,
+       "rmsRA": 0.237,
+       "rmsDec": 0.244,
+       "ratio": 0.251,
+       "mag": 18.7,
+       "logSNR": 0.52,
+       "sig_eph_ra": 0.0257,
+       "sig_eph_dec": 0.0207,
+       "ratio_c": 0.249
+      }
+     ]
+    },
+    {
+     "trk": "P7J4001/#2",
+     "n": 4,
+     "assoc": "1998 WF23",
+     "assoc_sep": 3.28,
+     "meas": [
+      {
+       "obsTime": "2019-10-30T09:36:32.004Z",
+       "dra": -0.103,
+       "ddec": -0.044,
+       "abs": 0.112,
+       "rmsRA": 0.052,
+       "rmsDec": 0.069,
+       "ratio": 1.3,
+       "mag": 17.0,
+       "logSNR": 1.67,
+       "sig_eph_ra": 0.0003,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 1.3
+      },
+      {
+       "obsTime": "2019-10-30T09:55:25.001Z",
+       "dra": 0.017,
+       "ddec": -0.086,
+       "abs": 0.088,
+       "rmsRA": 0.061,
+       "rmsDec": 0.112,
+       "ratio": 0.69,
+       "mag": 17.1,
+       "logSNR": 1.62,
+       "sig_eph_ra": 0.0003,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 0.69
+      },
+      {
+       "obsTime": "2019-10-30T11:03:04.004Z",
+       "dra": 0.029,
+       "ddec": -0.045,
+       "abs": 0.053,
+       "rmsRA": 0.084,
+       "rmsDec": 0.094,
+       "ratio": 0.424,
+       "mag": 17.4,
+       "logSNR": 1.28,
+       "sig_eph_ra": 0.0003,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 0.424
+      },
+      {
+       "obsTime": "2019-10-30T11:49:09.003Z",
+       "dra": 0.005,
+       "ddec": -0.128,
+       "abs": 0.128,
+       "rmsRA": 0.079,
+       "rmsDec": 0.097,
+       "ratio": 1.026,
+       "mag": 17.4,
+       "logSNR": 1.22,
+       "sig_eph_ra": 0.0003,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 1.026
+      }
+     ]
+    }
+   ],
+   "false_positives": 0,
+   "catalog_source": "noirlab",
+   "piazzi_seconds": 2.18,
+   "plates": [
+    {
+     "img": 1,
+     "ndet": 172,
+     "nref": 89,
+     "nmatch": 96,
+     "dra": 0.13,
+     "dde": 0.13
+    },
+    {
+     "img": 2,
+     "ndet": 188,
+     "nref": 87,
+     "nmatch": 98,
+     "dra": 0.08,
+     "dde": 0.1
+    },
+    {
+     "img": 3,
+     "ndet": 187,
+     "nref": 92,
+     "nmatch": 97,
+     "dra": 0.08,
+     "dde": 0.12
+    },
+    {
+     "img": 4,
+     "ndet": 143,
+     "nref": 86,
+     "nmatch": 95,
+     "dra": 0.1,
+     "dde": 0.13
+    },
+    {
+     "img": 5,
+     "ndet": 126,
+     "nref": 86,
+     "nmatch": 88,
+     "dra": 0.09,
+     "dde": 0.1
+    }
+   ],
+   "returncode": 0,
+   "movers": [
+    [
+     0.47,
+     266.1
+    ],
+    [
+     0.47,
+     253.4
+    ]
+   ],
+   "nrefs": [
+    89,
+    87,
+    92,
+    86,
+    86
+   ],
+   "seconds": 2.2
+  },
+  {
+   "id": "ztf_20210922_f607_c1_q3_gir",
+   "target": {
+    "num": "17105",
+    "name": "1999 JC47",
+    "V": 18.0,
+    "rate_arcsec_min": 0.159,
+    "dra_h": 4.0456,
+    "ddec_h": -8.666,
+    "cls": "MB>Middle"
+   },
+   "detected": true,
+   "status": "ok",
+   "tracks": [
+    {
+     "trk": "PSX1R00/#1",
+     "n": 3,
+     "assoc": "1999 JC47",
+     "assoc_sep": 2.19,
+     "meas": [
+      {
+       "obsTime": "2021-09-22T08:15:42.000Z",
+       "dra": 0.095,
+       "ddec": -0.007,
+       "abs": 0.095,
+       "rmsRA": 0.062,
+       "rmsDec": 0.063,
+       "ratio": 1.078,
+       "mag": 17.5,
+       "logSNR": 0.99,
+       "sig_eph_ra": 0.0007,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 1.078
+      },
+      {
+       "obsTime": "2021-09-22T09:28:18.996Z",
+       "dra": -0.047,
+       "ddec": 0.025,
+       "abs": 0.054,
+       "rmsRA": 0.041,
+       "rmsDec": 0.051,
+       "ratio": 0.82,
+       "mag": 16.9,
+       "logSNR": 1.41,
+       "sig_eph_ra": 0.0007,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 0.82
+      },
+      {
+       "obsTime": "2021-09-22T09:47:50.002Z",
+       "dra": -0.011,
+       "ddec": 0.002,
+       "abs": 0.011,
+       "rmsRA": 0.028,
+       "rmsDec": 0.037,
+       "ratio": 0.238,
+       "mag": 17.1,
+       "logSNR": 1.44,
+       "sig_eph_ra": 0.0007,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 0.238
+      }
+     ]
+    }
+   ],
+   "false_positives": 0,
+   "catalog_source": "noirlab",
+   "piazzi_seconds": 1.9,
+   "plates": [
+    {
+     "img": 1,
+     "ndet": 132,
+     "nref": 114,
+     "nmatch": 122,
+     "dra": 0.05,
+     "dde": 0.05
+    },
+    {
+     "img": 2,
+     "ndet": 256,
+     "nref": 175,
+     "nmatch": 178,
+     "dra": 0.05,
+     "dde": 0.05
+    },
+    {
+     "img": 3,
+     "ndet": 207,
+     "nref": 159,
+     "nmatch": 165,
+     "dra": 0.04,
+     "dde": 0.04
+    }
+   ],
+   "returncode": 0,
+   "movers": [
+    [
+     0.15,
+     159.4
+    ]
+   ],
+   "nrefs": [
+    114,
+    175,
+    159
+   ],
+   "seconds": 1.92
+  },
+  {
+   "id": "ztf_20191114_f447_c14_q3_gr",
+   "target": {
+    "num": "49743",
+    "name": "1999 VP143",
+    "V": 18.6,
+    "rate_arcsec_min": 0.118,
+    "dra_h": 6.845,
+    "ddec_h": -1.91,
+    "cls": "MB>Inner"
+   },
+   "detected": false,
+   "status": "data_error",
+   "error": "recorte pequeno (145x712, borda do quadrante)",
+   "tracks": [],
+   "false_positives": 0,
+   "seconds": 0.0
+  },
+  {
+   "id": "ztf_20230615_f373_c3_q1_gir",
+   "target": {
+    "num": "66328",
+    "name": "1999 JK58",
+    "V": 18.8,
+    "rate_arcsec_min": 0.207,
+    "dra_h": 11.6851,
+    "ddec_h": 4.154,
+    "cls": "MB>Inner"
+   },
+   "detected": false,
+   "status": "data_error",
+   "error": "recorte pequeno (74x352, borda do quadrante)",
+   "tracks": [],
+   "false_positives": 0,
+   "seconds": 0.0
+  },
+  {
+   "id": "ztf_20200207_f447_c14_q3_r",
+   "target": {
+    "num": "81558",
+    "name": "2000 HM29",
+    "V": 19.1,
+    "rate_arcsec_min": 1.1,
+    "dra_h": 63.7119,
+    "ddec_h": 17.132,
+    "cls": "MB>Middle"
+   },
+   "detected": true,
+   "status": "ok",
+   "tracks": [
+    {
+     "trk": "PALW200/#1",
+     "n": 4,
+     "assoc": "2000 HM29",
+     "assoc_sep": 2.5,
+     "meas": [
+      {
+       "obsTime": "2020-02-07T02:26:00.002Z",
+       "dra": 0.022,
+       "ddec": -0.045,
+       "abs": 0.05,
+       "rmsRA": 0.063,
+       "rmsDec": 0.075,
+       "ratio": 0.511,
+       "mag": 18.4,
+       "logSNR": 0.91,
+       "sig_eph_ra": 0.0003,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 0.511
+      },
+      {
+       "obsTime": "2020-02-07T02:33:02.999Z",
+       "dra": 0.042,
+       "ddec": 0.031,
+       "abs": 0.052,
+       "rmsRA": 0.128,
+       "rmsDec": 0.13,
+       "ratio": 0.284,
+       "mag": 18.4,
+       "logSNR": 0.82,
+       "sig_eph_ra": 0.0003,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 0.284
+      },
+      {
+       "obsTime": "2020-02-07T02:40:05.003Z",
+       "dra": -0.009,
+       "ddec": -0.134,
+       "abs": 0.134,
+       "rmsRA": 0.101,
+       "rmsDec": 0.069,
+       "ratio": 1.097,
+       "mag": 18.6,
+       "logSNR": 0.83,
+       "sig_eph_ra": 0.0003,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 1.097
+      },
+      {
+       "obsTime": "2020-02-07T02:47:06.997Z",
+       "dra": 0.103,
+       "ddec": -0.097,
+       "abs": 0.141,
+       "rmsRA": 0.081,
+       "rmsDec": 0.088,
+       "ratio": 1.178,
+       "mag": 18.4,
+       "logSNR": 0.78,
+       "sig_eph_ra": 0.0003,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 1.178
+      }
+     ]
+    }
+   ],
+   "false_positives": 0,
+   "catalog_source": "esa",
+   "piazzi_seconds": 1.13,
+   "plates": [
+    {
+     "img": 1,
+     "ndet": 111,
+     "nref": 72,
+     "nmatch": 76,
+     "dra": 0.06,
+     "dde": 0.07
+    },
+    {
+     "img": 2,
+     "ndet": 115,
+     "nref": 70,
+     "nmatch": 75,
+     "dra": 0.06,
+     "dde": 0.07
+    },
+    {
+     "img": 3,
+     "ndet": 122,
+     "nref": 74,
+     "nmatch": 77,
+     "dra": 0.09,
+     "dde": 0.07
+    },
+    {
+     "img": 4,
+     "ndet": 118,
+     "nref": 71,
+     "nmatch": 78,
+     "dra": 0.05,
+     "dde": 0.07
+    }
+   ],
+   "returncode": 0,
+   "movers": [
+    [
+     1.09,
+     75.2
+    ]
+   ],
+   "nrefs": [
+    72,
+    70,
+    74,
+    71
+   ],
+   "seconds": 1.16
+  },
+  {
+   "id": "ztf_20210109_f499_c2_q3_gir",
+   "target": {
+    "num": "23341",
+    "name": "3503 P-L",
+    "V": 19.6,
+    "rate_arcsec_min": 0.834,
+    "dra_h": 49.1034,
+    "ddec_h": 9.776,
+    "cls": "MB>Middle"
+   },
+   "detected": true,
+   "status": "ok",
+   "tracks": [
+    {
+     "trk": "PL0CG00/#1",
+     "n": 3,
+     "assoc": "3503 P-L",
+     "assoc_sep": 2.37,
+     "meas": [
+      {
+       "obsTime": "2021-01-09T02:40:31.000Z",
+       "dra": 0.04,
+       "ddec": -0.135,
+       "abs": 0.141,
+       "rmsRA": 0.081,
+       "rmsDec": 0.084,
+       "ratio": 1.206,
+       "mag": 19.2,
+       "logSNR": 0.94,
+       "sig_eph_ra": 0.001,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 1.206
+      },
+      {
+       "obsTime": "2021-01-09T03:29:21.999Z",
+       "dra": 0.081,
+       "ddec": -0.07,
+       "abs": 0.107,
+       "rmsRA": 0.11,
+       "rmsDec": 0.116,
+       "ratio": 0.672,
+       "mag": 19.1,
+       "logSNR": 0.87,
+       "sig_eph_ra": 0.001,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 0.672
+      },
+      {
+       "obsTime": "2021-01-09T04:36:38.996Z",
+       "dra": 0.067,
+       "ddec": 0.03,
+       "abs": 0.073,
+       "rmsRA": 0.059,
+       "rmsDec": 0.05,
+       "ratio": 0.948,
+       "mag": 19.0,
+       "logSNR": 0.73,
+       "sig_eph_ra": 0.001,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 0.948
+      }
+     ]
+    },
+    {
+     "trk": "PL0CG01/#2",
+     "n": 3,
+     "assoc": "2004 RX325",
+     "assoc_sep": 2.33,
+     "meas": [
+      {
+       "obsTime": "2021-01-09T02:40:31.000Z",
+       "dra": -0.152,
+       "ddec": -0.067,
+       "abs": 0.166,
+       "rmsRA": 0.081,
+       "rmsDec": 0.084,
+       "ratio": 1.421,
+       "mag": 19.5,
+       "logSNR": 1.06,
+       "sig_eph_ra": 0.003,
+       "sig_eph_dec": 0.0023,
+       "ratio_c": 1.42
+      },
+      {
+       "obsTime": "2021-01-09T03:29:21.999Z",
+       "dra": -0.092,
+       "ddec": 0.036,
+       "abs": 0.099,
+       "rmsRA": 0.244,
+       "rmsDec": 0.247,
+       "ratio": 0.286,
+       "mag": 20.1,
+       "logSNR": 0.71,
+       "sig_eph_ra": 0.003,
+       "sig_eph_dec": 0.0023,
+       "ratio_c": 0.286
+      },
+      {
+       "obsTime": "2021-01-09T04:36:38.996Z",
+       "dra": -0.937,
+       "ddec": 0.46,
+       "abs": 1.044,
+       "rmsRA": 0.233,
+       "rmsDec": 0.231,
+       "ratio": 3.181,
+       "mag": 19.6,
+       "logSNR": 0.63,
+       "sig_eph_ra": 0.003,
+       "sig_eph_dec": 0.0023,
+       "ratio_c": 3.181
+      }
+     ]
+    }
+   ],
+   "false_positives": 0,
+   "catalog_source": "noirlab",
+   "piazzi_seconds": 1.56,
+   "plates": [
+    {
+     "img": 1,
+     "ndet": 165,
+     "nref": 52,
+     "nmatch": 55,
+     "dra": 0.04,
+     "dde": 0.04
+    },
+    {
+     "img": 2,
+     "ndet": 100,
+     "nref": 44,
+     "nmatch": 46,
+     "dra": 0.06,
+     "dde": 0.07
+    },
+    {
+     "img": 3,
+     "ndet": 159,
+     "nref": 58,
+     "nmatch": 61,
+     "dra": 0.06,
+     "dde": 0.05
+    }
+   ],
+   "returncode": 0,
+   "movers": [
+    [
+     0.83,
+     78.6
+    ],
+    [
+     0.76,
+     65.7
+    ]
+   ],
+   "nrefs": [
+    52,
+    44,
+    58
+   ],
+   "seconds": 1.58
+  },
+  {
+   "id": "ztf_20220416_f519_c2_q4_gir",
+   "target": {
+    "num": "125311",
+    "name": "2001 VV32",
+    "V": 19.7,
+    "rate_arcsec_min": 0.29,
+    "dra_h": 17.4032,
+    "ddec_h": 0.489,
+    "cls": "MB>Inner"
+   },
+   "detected": false,
+   "status": "ok",
+   "tracks": [],
+   "false_positives": 0,
+   "catalog_source": "noirlab",
+   "piazzi_seconds": 1.25,
+   "plates": [
+    {
+     "img": 1,
+     "ndet": 110,
+     "nref": 53,
+     "nmatch": 56,
+     "dra": 0.04,
+     "dde": 0.06
+    },
+    {
+     "img": 2,
+     "ndet": 122,
+     "nref": 54,
+     "nmatch": 61,
+     "dra": 0.04,
+     "dde": 0.03
+    },
+    {
+     "img": 3,
+     "ndet": 44,
+     "nref": 33,
+     "nmatch": 33,
+     "dra": 0.14,
+     "dde": 0.19
+    }
+   ],
+   "returncode": 0,
+   "movers": [],
+   "nrefs": [
+    53,
+    54,
+    33
+   ],
+   "seconds": 1.27
+  },
+  {
+   "id": "ztf_20220823_f556_c4_q3_gir",
+   "target": {
+    "num": "81383",
+    "name": "2000 GP71",
+    "V": 19.9,
+    "rate_arcsec_min": 0.263,
+    "dra_h": 15.2667,
+    "ddec_h": -4.092,
+    "cls": "MB>Middle"
+   },
+   "detected": true,
+   "status": "ok",
+   "tracks": [
+    {
+     "trk": "P39D400/#1",
+     "n": 3,
+     "assoc": "2000 GP71",
+     "assoc_sep": 1.71,
+     "meas": [
+      {
+       "obsTime": "2022-08-23T10:16:35.997Z",
+       "dra": -0.159,
+       "ddec": -0.108,
+       "abs": 0.192,
+       "rmsRA": 0.133,
+       "rmsDec": 0.119,
+       "ratio": 1.076,
+       "mag": 19.3,
+       "logSNR": 0.79,
+       "sig_eph_ra": 0.001,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 1.076
+      },
+      {
+       "obsTime": "2022-08-23T11:11:06.997Z",
+       "dra": 0.024,
+       "ddec": -0.063,
+       "abs": 0.067,
+       "rmsRA": 0.045,
+       "rmsDec": 0.05,
+       "ratio": 0.995,
+       "mag": 19.2,
+       "logSNR": 0.96,
+       "sig_eph_ra": 0.001,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 0.995
+      },
+      {
+       "obsTime": "2022-08-23T11:25:10.996Z",
+       "dra": -0.056,
+       "ddec": 0.029,
+       "abs": 0.063,
+       "rmsRA": 0.09,
+       "rmsDec": 0.094,
+       "ratio": 0.483,
+       "mag": 19.2,
+       "logSNR": 0.67,
+       "sig_eph_ra": 0.001,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 0.483
+      }
+     ]
+    }
+   ],
+   "false_positives": 0,
+   "catalog_source": "noirlab",
+   "piazzi_seconds": 1.83,
+   "plates": [
+    {
+     "img": 1,
+     "ndet": 175,
+     "nref": 75,
+     "nmatch": 78,
+     "dra": 0.08,
+     "dde": 0.05
+    },
+    {
+     "img": 2,
+     "ndet": 281,
+     "nref": 86,
+     "nmatch": 88,
+     "dra": 0.03,
+     "dde": 0.04
+    },
+    {
+     "img": 3,
+     "ndet": 258,
+     "nref": 86,
+     "nmatch": 88,
+     "dra": 0.03,
+     "dde": 0.04
+    }
+   ],
+   "returncode": 0,
+   "movers": [
+    [
+     0.25,
+     104.9
+    ]
+   ],
+   "nrefs": [
+    75,
+    86,
+    86
+   ],
+   "seconds": 1.85
+  },
+  {
+   "id": "ztf_20220409_f519_c2_q4_gir",
+   "target": {
+    "num": "198776",
+    "name": "2005 ET101",
+    "V": 20.0,
+    "rate_arcsec_min": 0.135,
+    "dra_h": 1.1328,
+    "ddec_h": 8.037,
+    "cls": "MB>Outer"
+   },
+   "detected": true,
+   "status": "ok",
+   "tracks": [
+    {
+     "trk": "PZ1ZI00/#1",
+     "n": 3,
+     "assoc": "2005 ET101",
+     "assoc_sep": 1.84,
+     "meas": [
+      {
+       "obsTime": "2022-04-09T04:30:24.996Z",
+       "dra": 0.149,
+       "ddec": 0.042,
+       "abs": 0.155,
+       "rmsRA": 0.314,
+       "rmsDec": 0.313,
+       "ratio": 0.349,
+       "mag": 19.6,
+       "logSNR": 0.5,
+       "sig_eph_ra": 0.004,
+       "sig_eph_dec": 0.0013,
+       "ratio_c": 0.349
+      },
+      {
+       "obsTime": "2022-04-09T05:09:06.003Z",
+       "dra": 0.178,
+       "ddec": -0.133,
+       "abs": 0.222,
+       "rmsRA": 2.94,
+       "rmsDec": 2.94,
+       "ratio": 0.053,
+       "mag": 19.5,
+       "logSNR": 0.0,
+       "sig_eph_ra": 0.004,
+       "sig_eph_dec": 0.0013,
+       "ratio_c": 0.053
+      },
+      {
+       "obsTime": "2022-04-09T06:57:24.000Z",
+       "dra": -0.102,
+       "ddec": 0.038,
+       "abs": 0.109,
+       "rmsRA": 0.415,
+       "rmsDec": 0.416,
+       "ratio": 0.186,
+       "mag": 19.4,
+       "logSNR": 0.0,
+       "sig_eph_ra": 0.004,
+       "sig_eph_dec": 0.0013,
+       "ratio_c": 0.186
+      }
+     ]
+    }
+   ],
+   "false_positives": 0,
+   "catalog_source": "noirlab",
+   "piazzi_seconds": 1.48,
+   "plates": [
+    {
+     "img": 1,
+     "ndet": 51,
+     "nref": 27,
+     "nmatch": 28,
+     "dra": 0.06,
+     "dde": 0.07
+    },
+    {
+     "img": 2,
+     "ndet": 82,
+     "nref": 32,
+     "nmatch": 33,
+     "dra": 0.03,
+     "dde": 0.02
+    },
+    {
+     "img": 3,
+     "ndet": 75,
+     "nref": 32,
+     "nmatch": 32,
+     "dra": 0.04,
+     "dde": 0.05
+    }
+   ],
+   "returncode": 0,
+   "movers": [
+    [
+     0.13,
+     2.0
+    ]
+   ],
+   "nrefs": [
+    27,
+    32,
+    32
+   ],
+   "seconds": 1.5
+  },
+  {
+   "id": "ztf_20220723_f496_c1_q4_gir",
+   "target": {
+    "num": "85761",
+    "name": "1998 SC171",
+    "V": 20.0,
+    "rate_arcsec_min": 0.077,
+    "dra_h": -0.6921,
+    "ddec_h": 4.595,
+    "cls": "MB>Inner"
+   },
+   "detected": true,
+   "status": "ok",
+   "tracks": [
+    {
+     "trk": "P2AU100/#1",
+     "n": 3,
+     "assoc": "1998 SC171",
+     "assoc_sep": 3.95,
+     "meas": [
+      {
+       "obsTime": "2022-07-23T08:25:05.000Z",
+       "dra": -0.267,
+       "ddec": 0.025,
+       "abs": 0.268,
+       "rmsRA": 0.186,
+       "rmsDec": 0.193,
+       "ratio": 1.001,
+       "mag": 19.6,
+       "logSNR": 0.61,
+       "sig_eph_ra": 0.0087,
+       "sig_eph_dec": 0.0037,
+       "ratio_c": 1.001
+      },
+      {
+       "obsTime": "2022-07-23T09:22:16.004Z",
+       "dra": 0.022,
+       "ddec": 0.051,
+       "abs": 0.055,
+       "rmsRA": 0.061,
+       "rmsDec": 0.055,
+       "ratio": 0.672,
+       "mag": 19.1,
+       "logSNR": 1.05,
+       "sig_eph_ra": 0.0087,
+       "sig_eph_dec": 0.0037,
+       "ratio_c": 0.667
+      },
+      {
+       "obsTime": "2022-07-23T10:56:31.999Z",
+       "dra": -0.08,
+       "ddec": 0.004,
+       "abs": 0.08,
+       "rmsRA": 0.052,
+       "rmsDec": 0.054,
+       "ratio": 1.073,
+       "mag": 19.1,
+       "logSNR": 0.89,
+       "sig_eph_ra": 0.0087,
+       "sig_eph_dec": 0.0037,
+       "ratio_c": 1.064
+      }
+     ]
+    }
+   ],
+   "false_positives": 0,
+   "catalog_source": "noirlab",
+   "piazzi_seconds": 1.72,
+   "plates": [
+    {
+     "img": 1,
+     "ndet": 134,
+     "nref": 74,
+     "nmatch": 76,
+     "dra": 0.05,
+     "dde": 0.07
+    },
+    {
+     "img": 2,
+     "ndet": 247,
+     "nref": 74,
+     "nmatch": 80,
+     "dra": 0.04,
+     "dde": 0.03
+    },
+    {
+     "img": 3,
+     "ndet": 264,
+     "nref": 76,
+     "nmatch": 80,
+     "dra": 0.03,
+     "dde": 0.03
+    }
+   ],
+   "returncode": 0,
+   "movers": [
+    [
+     0.08,
+     337.1
+    ]
+   ],
+   "nrefs": [
+    74,
+    74,
+    76
+   ],
+   "seconds": 1.74
+  },
+  {
+   "id": "ztf_20220823_f607_c1_q3_gir",
+   "target": {
+    "num": "83468",
+    "name": "2001 SP75",
+    "V": 20.0,
+    "rate_arcsec_min": 0.475,
+    "dra_h": 28.204,
+    "ddec_h": 4.11,
+    "cls": "MB>Outer"
+   },
+   "detected": true,
+   "status": "ok",
+   "tracks": [
+    {
+     "trk": "P39DU00/#1",
+     "n": 3,
+     "assoc": "2001 SP75",
+     "assoc_sep": 1.79,
+     "meas": [
+      {
+       "obsTime": "2022-08-23T10:42:02.003Z",
+       "dra": 0.084,
+       "ddec": -0.13,
+       "abs": 0.155,
+       "rmsRA": 0.103,
+       "rmsDec": 0.1,
+       "ratio": 1.078,
+       "mag": 19.4,
+       "logSNR": 0.8,
+       "sig_eph_ra": 0.0027,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 1.078
+      },
+      {
+       "obsTime": "2022-08-23T11:13:09.003Z",
+       "dra": 0.086,
+       "ddec": 0.013,
+       "abs": 0.087,
+       "rmsRA": 0.041,
+       "rmsDec": 0.05,
+       "ratio": 1.349,
+       "mag": 19.1,
+       "logSNR": 1.08,
+       "sig_eph_ra": 0.0027,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 1.348
+      },
+      {
+       "obsTime": "2022-08-23T11:27:55.000Z",
+       "dra": 0.075,
+       "ddec": -0.001,
+       "abs": 0.075,
+       "rmsRA": 0.052,
+       "rmsDec": 0.06,
+       "ratio": 0.948,
+       "mag": 18.9,
+       "logSNR": 0.82,
+       "sig_eph_ra": 0.0027,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 0.948
+      }
+     ]
+    }
+   ],
+   "false_positives": 0,
+   "catalog_source": "noirlab",
+   "piazzi_seconds": 2.12,
+   "plates": [
+    {
+     "img": 1,
+     "ndet": 217,
+     "nref": 140,
+     "nmatch": 148,
+     "dra": 0.06,
+     "dde": 0.05
+    },
+    {
+     "img": 2,
+     "ndet": 337,
+     "nref": 173,
+     "nmatch": 176,
+     "dra": 0.04,
+     "dde": 0.05
+    },
+    {
+     "img": 3,
+     "ndet": 377,
+     "nref": 173,
+     "nmatch": 179,
+     "dra": 0.04,
+     "dde": 0.05
+    }
+   ],
+   "returncode": 0,
+   "movers": [
+    [
+     0.47,
+     80.9
+    ]
+   ],
+   "nrefs": [
+    140,
+    173,
+    173
+   ],
+   "seconds": 2.14
+  },
+  {
+   "id": "ztf_20230427_f373_c3_q1_gir",
+   "target": {
+    "num": "102791",
+    "name": "1999 VR157",
+    "V": 20.0,
+    "rate_arcsec_min": 0.602,
+    "dra_h": -33.4699,
+    "ddec_h": 13.617,
+    "cls": "MB>Inner"
+   },
+   "detected": false,
+   "status": "ok",
+   "tracks": [],
+   "false_positives": 0,
+   "catalog_source": "noirlab",
+   "piazzi_seconds": 1.3,
+   "plates": [
+    {
+     "img": 1,
+     "ndet": 85,
+     "nref": 43,
+     "nmatch": 44,
+     "dra": 0.05,
+     "dde": 0.03
+    },
+    {
+     "img": 2,
+     "ndet": 49,
+     "nref": 34,
+     "nmatch": 35,
+     "dra": 0.05,
+     "dde": 0.06
+    },
+    {
+     "img": 3,
+     "ndet": 80,
+     "nref": 40,
+     "nmatch": 41,
+     "dra": 0.04,
+     "dde": 0.04
+    }
+   ],
+   "returncode": 0,
+   "movers": [],
+   "nrefs": [
+    43,
+    34,
+    40
+   ],
+   "seconds": 1.32
+  },
+  {
+   "id": "ztf_20211030_f784_c1_q2_gr",
+   "target": {
+    "num": "1235",
+    "name": "Schorria",
+    "V": 16.3,
+    "rate_arcsec_min": 1.26,
+    "dra_h": 69.28471,
+    "ddec_h": 30.26505,
+    "cls": "Mars-Crosser",
+    "V_horizons": 16.167,
+    "source": "horizons"
+   },
+   "detected": true,
+   "status": "ok",
+   "tracks": [
+    {
+     "trk": "PU3D200/#1",
+     "n": 3,
+     "assoc": "Schorria",
+     "assoc_sep": 0.08,
+     "meas": [
+      {
+       "obsTime": "2021-10-30T10:14:13.999Z",
+       "dra": 0.049,
+       "ddec": 0.026,
+       "abs": 0.055,
+       "rmsRA": 0.032,
+       "rmsDec": 0.033,
+       "ratio": 1.203,
+       "mag": 15.0,
+       "logSNR": 2.42,
+       "sig_eph_ra": 0.0007,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 1.202
+      },
+      {
+       "obsTime": "2021-10-30T10:45:19.997Z",
+       "dra": 0.049,
+       "ddec": 0.036,
+       "abs": 0.06,
+       "rmsRA": 0.019,
+       "rmsDec": 0.016,
+       "ratio": 2.43,
+       "mag": 15.2,
+       "logSNR": 2.29,
+       "sig_eph_ra": 0.0007,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 2.429
+      },
+      {
+       "obsTime": "2021-10-30T11:05:30.003Z",
+       "dra": 0.031,
+       "ddec": 0.003,
+       "abs": 0.031,
+       "rmsRA": 0.017,
+       "rmsDec": 0.011,
+       "ratio": 1.539,
+       "mag": 15.2,
+       "logSNR": 2.3,
+       "sig_eph_ra": 0.0007,
+       "sig_eph_dec": 0.0003,
+       "ratio_c": 1.538
+      }
+     ]
+    }
+   ],
+   "false_positives": 0,
+   "catalog_source": "noirlab",
+   "piazzi_seconds": 1.82,
+   "plates": [
+    {
+     "img": 1,
+     "ndet": 277,
+     "nref": 79,
+     "nmatch": 82,
+     "dra": 0.04,
+     "dde": 0.04
+    },
+    {
+     "img": 2,
+     "ndet": 145,
+     "nref": 63,
+     "nmatch": 70,
+     "dra": 0.03,
+     "dde": 0.03
+    },
+    {
+     "img": 3,
+     "ndet": 146,
+     "nref": 62,
+     "nmatch": 73,
+     "dra": 0.03,
+     "dde": 0.03
+    }
+   ],
+   "returncode": 0,
+   "movers": [
+    [
+     1.26,
+     66.3
+    ]
+   ],
+   "nrefs": [
+    79,
+    63,
+    62
+   ],
+   "seconds": 1.85
+  }
+ ],
+ "metrics": {
+  "n_sequences": 23,
+  "n_run": 21,
+  "n_failed": 2,
+  "n_plate_fail": 0,
+  "n_detected": 16,
+  "detection_rate": 0.762,
+  "detection_by_V": {
+   "16–17": {
+    "n": 2,
+    "det": 2,
+    "rate": 1.0
+   },
+   "17–18": {
+    "n": 1,
+    "det": 0,
+    "rate": 0.0
+   },
+   "18–19": {
+    "n": 7,
+    "det": 6,
+    "rate": 0.857
+   },
+   "19–20": {
+    "n": 6,
+    "det": 4,
+    "rate": 0.667
+   },
+   "20–21": {
+    "n": 4,
+    "det": 3,
+    "rate": 0.75
+   },
+   "21–22": {
+    "n": 1,
+    "det": 1,
+    "rate": 1.0
+   }
+  },
+  "n_meas_target": 55,
+  "n_meas_known": 71,
+  "oc_median": 0.108,
+  "oc_rms": 0.1802516422822676,
+  "oc_p95": 0.32349999999999995,
+  "oc_rms_ra": 0.1440263864713685,
+  "oc_rms_dec": 0.10847882072300817,
+  "oc_mean_ra": 0.028654545454545453,
+  "oc_mean_dec": -0.027690909090909092,
+  "oc_median_all_known": 0.107,
+  "ratio_median": 1.05,
+  "sigma_median": 0.11879393923934,
+  "sig_eph_median": 0.009454099639838792,
+  "n_meas_eph": 55,
+  "n_meas_clean": 29,
+  "n_seq_clean": 9,
+  "oc_median_clean": 0.087,
+  "oc_rms_clean": 0.1156404952338541,
+  "oc_p95_clean": 0.20999999999999994,
+  "oc_mean_ra_clean": 0.014275862068965516,
+  "oc_mean_dec_clean": -0.030034482758620692,
+  "oc_rms_ra_clean": 0.09210226699819551,
+  "oc_rms_dec_clean": 0.07008836786760574,
+  "ratio_median_clean": 0.995,
+  "ratio_c_median": 0.836,
+  "ratio_c_median_clean": 0.995,
+  "z_ra_median_clean": 0.7363636363636363,
+  "z_dec_median_clean": 0.6,
+  "ratio_within_median": 0.77376412373391,
+  "z_ra_within_median": 0.7212386464861578,
+  "z_dec_within_median": 0.5418568218883999,
+  "fp_per_seq": 0.0,
+  "fp_total": 0,
+  "fp_per_seq_target_only": 0.0,
+  "n_known_field": 0,
+  "seconds_total": 60.8,
+  "piazzi_seconds_total": 56.7
+ }
+}

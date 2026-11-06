@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07080a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Piazzi</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+<canvas id="chart" aria-hidden="true"></canvas>
+
+<!-- início -->
+<main id="home" class="screen">
+  <header class="bar">
+    <span class="tag" data-i18n="tagline_tag">Pocket observatory</span>
+    <button id="btn-settings" class="tag amber link">Default ⚙︎</button>
+  </header>
+  <h1>Piazzi</h1>
+  <p class="lede" data-i18n="lede">Measure the sky. Find what moves.</p>
+  <div class="plate-sample"><canvas id="sample-anim"></canvas>
+    <div class="hud"><span class="tag amber">07 11 44.28 +22 24 16</span><span class="tag amber">0.35″/min</span></div></div>
+  <div class="cards">
+    <button class="card primary" id="go-files"><span class="n">01</span><span class="body"><span class="tag" data-i18n="card_files_tag">Your plates</span>
+      <b data-i18n="card_files_title">Open my images</b><span class="desc" data-i18n="card_files_desc"></span></span><span class="arrow">↗</span></button>
+    <button class="card" id="go-example"><span class="n">02</span><span class="body"><span class="tag" data-i18n="card_example_tag">Try it</span>
+      <b data-i18n="card_example_title">Open example</b><span class="desc" data-i18n="card_example_desc"></span></span><span class="arrow">↗</span></button>
+  </div>
+  <p class="foot"><span class="tag">open source</span><span class="tag">Gaia DR3</span><span class="tag">SkyBoT</span><span class="tag">WebAssembly</span></p>
+  <p class="foot version" id="version">Piazzi · open source · MIT</p>
+  <input type="file" id="files" multiple hidden>
+</main>
+
+<!-- sessão -->
+<main id="session" class="screen hidden">
+  <header class="bar"><button class="icon" id="sess-close" data-i18n-aria="close" aria-label="Close">✕</button><span class="tag amber" id="sess-step">Step 1/5</span></header>
+  <div class="progress"><i id="sess-prog"></i></div>
+  <h2 id="sess-title">Reducing the plates…</h2>
+  <p class="status" id="sess-status"></p>
+  <section class="panel"><span class="tag" data-i18n="log_title">Observing log</span><ol id="log"></ol></section>
+  <div class="actions" id="sess-actions"></div>
+</main>
+
+<!-- resultado -->
+<main id="results" class="screen hidden">
+  <div class="viewer">
+    <header class="bar over">
+      <button class="icon" id="res-back" data-i18n-aria="back" aria-label="Back">‹</button>
+      <div class="frames" id="frames"></div>
+      <div class="tools"><button class="icon" id="res-blink" data-i18n-aria="blink" aria-label="Blink">❚❚</button>
+        <button class="icon" id="res-layers" data-i18n-aria="layers" aria-label="Layers">◫</button></div>
+    </header>
+    <div class="layers hidden" id="layers">
+      <label><input type="checkbox" data-l="track" checked> <span data-i18n="l_track"></span></label>
+      <label><input type="checkbox" data-l="known" checked> <span data-i18n="l_known"></span></label>
+      <label><input type="checkbox" data-l="refs"> <span data-i18n="l_refs"></span></label>
+      <label><input type="checkbox" data-l="dets"> <span data-i18n="l_dets"></span></label>
+    </div>
+    <div class="readout"><span class="tag amber" id="ro-frame"></span><span class="tag" id="ro-coord" data-i18n="tap_identify">tap = identify</span></div>
+    <div class="imgwrap" id="imgwrap"><canvas id="sky"></canvas></div>
+  </div>
+  <aside class="sheet" id="sheet"></aside>
+</main>
+
+<!-- centro do campo -->
+<dialog id="center-dlg">
+  <form method="dialog" class="dlg">
+    <span class="tag amber" data-i18n="center_tag"></span>
+    <h3 data-i18n="center_q"></h3>
+    <p class="status" data-i18n="center_d"></p>
+    <div class="row"><input id="c-name" placeholder="M42, NGC 2264, Betelgeuse…"><button type="button" id="c-find" class="square">⌕</button></div>
+    <span class="tag" id="c-msg"></span>
+    <div class="row two"><label><span class="tag" data-i18n="ra_hms"></span><input id="c-ra"></label><label><span class="tag">Dec ° ′ ″</span><input id="c-dec"></label></div>
+    <div class="row"><button type="button" class="ghost" id="c-cancel" data-i18n="cancel">Cancel</button><button type="button" class="primary-btn" id="c-ok" data-i18n="continue">Continue</button></div>
+  </form>
+</dialog>
+
+<!-- ajustes -->
+<dialog id="settings-dlg">
+  <form method="dialog" class="dlg">
+    <span class="tag amber" data-i18n="settings"></span>
+    <label class="lang"><span class="tag" data-i18n="language"></span><select id="lang"><option value="en">English</option><option value="pt">Português</option></select></label>
+    <h3 data-i18n="equipment"></h3>
+    <div id="profiles"></div>
+    <div class="row"><input id="p-name" data-i18n-ph="profile_ph"><button type="button" class="square" id="p-save">＋</button></div>
+    <h3 data-i18n="parameters"></h3>
+    <div id="params" class="params"></div>
+    <div class="row"><button type="button" class="ghost" id="p-defaults" data-i18n="restore_defaults"></button><button class="primary-btn">OK</button></div>
+  </form>
+</dialog>
+
+<script src="strings.js"></script>
+<script src="astro.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

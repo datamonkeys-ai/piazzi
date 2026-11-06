@@ -1,0 +1,13 @@
+#Table J_ApJ_867_105_refcat2:
+#Name: J/ApJ/867/105/refcat2
+#---Details of Columns:
+    RA_ICRS (deg)   (F12.8) Right ascension (ICRS) at Ep=2015.5 [ucd=pos.eq.ra;meta.main]
+    DE_ICRS (deg)   (F12.8) Declination (ICRS) at Ep=2015.5 [ucd=pos.eq.dec;meta.main]
+    pmRA (mas/yr)   (F8.2)  Proper motion in RA [ucd=pos.pm;pos.eq.ra]
+    pmDE (mas/yr)   (F8.2)  Proper motion in Dec [ucd=pos.pm;pos.eq.dec]
+    rmag (mag)      (F6.3)  ? PS1 r magnitude [ucd=phot.mag;em.opt.R]
+------------ ------------ -------- -------- ------
+RA_ICRS      DE_ICRS      pmRA     pmDE     rmag  
+------------ ------------ -------- -------- ------
+125.55000000  29.54000000    10.00   -20.00 15.200
+125.57000000  29.56000000                   13.100

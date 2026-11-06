@@ -1,0 +1,48 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  cpp:
+    name: C++ — formatting, build, ctest and accuracy (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, macos-14, windows-2022]
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: lukka/get-cmake@f86dd60acae0d132056913e248bdabf0e0580b7a # v4.4.5
+      - name: Lint (clang-format)
+        if: runner.os == 'Linux'
+        run: |
+          find cpp/src cpp/include cpp/gui cpp/tests \( -name '*.cpp' -o -name '*.hpp' -o -name '*.h' \) -print0 \
+            | xargs -0 clang-format --dry-run --Werror
+      - name: Build (core, CLI and tests; GUI with SDL2 from source)
+        run: |
+          cmake -S cpp -B cpp/build -G Ninja -DCMAKE_BUILD_TYPE=Release -DASTRO_FETCH_SDL2=ON
+          cmake --build cpp/build
+      - name: Tests (ctest)
+        run: ctest --test-dir cpp/build --output-on-failure
+      - name: Accuracy against JPL Horizons
+        if: runner.os != 'Windows'
+        run: bash cpp/tests/accuracy.sh
+
+  docker:
+    name: Docker — build and healthcheck
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - run: docker build -t piazzi .
+      - run: |
+          docker run -d --name web -p 8777:8777 piazzi
+          for i in $(seq 1 20); do curl -fs localhost:8777/healthz && exit 0; sleep 1; done
+          docker logs web; exit 1

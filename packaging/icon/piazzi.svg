@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Piazzi: retícula âmbar de quatro cantos sobre azul-noite, com o asteroide (ponto) e seu traço curto -->
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="38%" r="75%">
+      <stop offset="0" stop-color="#13234a"/>
+      <stop offset="1" stop-color="#060b1a"/>
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="1024" height="1024" rx="224" fill="url(#sky)"/>
+  <g fill="#e8ecf5" opacity="0.55">
+    <circle cx="128" cy="520" r="10"/><circle cx="512" cy="128" r="8"/><circle cx="896" cy="470" r="11"/>
+    <circle cx="560" cy="900" r="8"/><circle cx="676" cy="380" r="6"/>
+  </g>
+  <g fill="none" stroke="#f0a24b" stroke-width="64" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M232 400 V232 H400"/>
+    <path d="M624 232 H792 V400"/>
+    <path d="M792 624 V792 H624"/>
+    <path d="M400 792 H232 V624"/>
+  </g>
+  <line x1="388" y1="604" x2="474" y2="546" stroke="#f0a24b" stroke-width="40" stroke-linecap="round" opacity="0.6"/>
+  <circle cx="530" cy="508" r="62" fill="#ffffff"/>
+</svg>

@@ -1,0 +1,10 @@
+# Local web version: docker compose up  →  http://localhost:8777
+services:
+  web:
+    build: .
+    env_file:
+      - path: .env
+        required: false
+    ports:
+      - "${PORT:-8777}:${PORT:-8777}"
+    restart: unless-stopped

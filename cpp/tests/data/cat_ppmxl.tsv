@@ -1,0 +1,8 @@
+#
+#   VizieR Astronomical Server vizier.cds.unistra.fr
+#Column ...
+_RAJ2000	_DEJ2000	pmRA	pmDE	r1mag
+------	------	------	------	------
+---	---	---	---	---
+125.55	29.54	5.0	8.0	16.0
+125.57	29.56	-3.0		11.0

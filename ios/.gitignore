@@ -1,0 +1,4 @@
+build/
+build-sim/
+*.xcodeproj/xcuserdata/
+build-mac/

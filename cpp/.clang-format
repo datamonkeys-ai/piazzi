@@ -1,0 +1,8 @@
+# Formatação do C++ do Piazzi (rode: clang-format -i em src, include, gui e tests; nunca em src/earth_cheb.inc)
+BasedOnStyle: LLVM
+IndentWidth: 4
+ColumnLimit: 140
+SortIncludes: CaseSensitive
+IncludeBlocks: Preserve
+AllowShortFunctionsOnASingleLine: Inline
+AccessModifierOffset: -4

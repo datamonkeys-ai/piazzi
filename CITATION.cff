@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use Piazzi in your research, please cite it as below."
+title: "Piazzi: open source astrometry of asteroids and comets"
+type: software
+authors:
+  - family-names: Perner
+    given-names: Louis
+version: 0.2.1
+date-released: "2026-11-06"
+license: MIT
+url: "https://datamonkeys.ai/piazzi/"
+repository-code: "https://github.com/datamonkeys-ai/piazzi"
+keywords:
+  - astrometry
+  - asteroids
+  - comets
+  - minor planets
+  - Gaia DR3
+  - ADES
+abstract: >-
+  Piazzi finds moving objects in CCD images, solves the plate against Gaia DR3,
+  measures positions and magnitudes with calibrated uncertainties, identifies
+  known bodies and writes ADES/MPC reports. Accuracy is benchmarked against
+  JPL Horizons on public ZTF and SDSS data.

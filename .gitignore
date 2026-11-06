@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+resultado*/
+tests/data/
+re_work/
+build-mac/
+build-linux-*/
+build-windows/
+dist/
+.venv
+official
+.env
+ios/*.xcodeproj/
+ios/build*/
+cpp/build*/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+*.egg-info/
+
+# benchmark (tools/benchmark): cache de rede e saídas
+tools/benchmark/cache/

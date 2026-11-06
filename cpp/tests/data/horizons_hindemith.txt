@@ -1,0 +1,11 @@
+# JPL Horizons (https://ssd.jpl.nasa.gov/api/horizons.api), queried on 2026-11-06.
+# Query (GET):
+#   format=text COMMAND='5157;' OBJ_DATA=NO MAKE_EPHEM=YES EPHEM_TYPE=OBSERVER CENTER='I41@399' (Palomar Mountain--ZTF)
+#   TLIST=2459251.7159606 2459251.7330092 2459251.7560532 TLIST_TYPE=JD TIME_TYPE=UT
+#   QUANTITIES='1,3,9' ANG_FORMAT=DEG EXTRA_PREC=YES CSV_FORMAT=NO
+# Target: 5157 Hindemith (1973 UB5), solution JPL#71. Instants = mid-exposure (OBSJD + 15 s) of
+# cpp/gui/assets/example/ztf_hindemith_{0,1,2}.fits. Columns: date time RA DEC (ICRF astrometric, degrees)
+# dRA*cosD dDEC/dt ("/h) APmag S-brt.
+ 2021-Feb-06 05:10:58.996     107.934503553  22.404402578  -21.0223  2.485909   17.654   6.922
+ 2021-Feb-06 05:35:31.995     107.931918540  22.404678099  -21.0222  2.451536   17.655   6.922
+ 2021-Feb-06 06:08:42.996     107.928425601  22.405044271  -21.0074  2.404699   17.655   6.923
