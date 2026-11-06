@@ -1080,7 +1080,7 @@ std::vector<Track> stack_search(Reduction &R, const Catalog &cat, const Settings
     double secs = std::chrono::duration<double>(std::chrono::steady_clock::now() - t0).count();
     std::snprintf(b, sizeof b,
                   "stack: %d frames, %zu rates (%.2f–%.2f\"/min, step %.3f\"/min, binning %d), N_eff %.2g, threshold %.2f "
-                  "(gauss %.2f, controle %.2f), %d trilha(s), %.1f s",
+                  "(gauss %.2f, control %.2f), %d track(s), %.1f s",
                   N, ntup, vmin, vmax, dv * sc, bin, neff, thr, k_gauss, k_ctrl, nacc, secs);
     R.log.push_back(b);
     return out;

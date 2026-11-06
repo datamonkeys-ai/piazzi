@@ -8,6 +8,7 @@
 #include "piazzi/core.hpp"
 #include "piazzi/reduce.hpp"
 
+#include "test_rng.hpp"
 #include <algorithm>
 #include <cmath>
 #include <cstdio>
@@ -58,7 +59,7 @@ static Image render(const std::vector<Src> &S, double jd, unsigned seed) {
             }
     }
     std::mt19937 rng(seed);
-    std::normal_distribution<double> nd(0, NOISE);
+    test_rng::Normal nd(0, NOISE);
     im.pix.resize(f.size());
     for (size_t i = 0; i < f.size(); ++i)
         im.pix[i] = uint16_t(std::clamp(std::lround(f[i] + nd(rng)), 0L, 65535L));
@@ -85,7 +86,7 @@ struct Scene {
 static Scene make_stars(unsigned seed) {
     Scene sc;
     std::mt19937 rng(seed);
-    std::uniform_real_distribution<double> u(-195, 195), um(14, 19.5);
+    test_rng::Uniform u(-195, 195), um(14, 19.5);
     for (int k = 0; k < 160; ++k) {
         Src s{u(rng), u(rng), um(rng)};
         sc.stars.push_back(s);

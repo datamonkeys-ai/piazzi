@@ -5,6 +5,7 @@
 #include "piazzi/reduce.hpp"
 #include <cmath>
 #include <cstdio>
+#include <filesystem>
 #include <string>
 #include <vector>
 using namespace astro;
@@ -80,9 +81,13 @@ int main(int argc, char **argv) {
     for (double v : hist)
         tot += v;
     CHECK(tot > 0.99 * w * h);
-    FILE *t = std::fopen("/tmp/astro_wcs_check.txt", "w");
+    const std::string tmp = (std::filesystem::temp_directory_path() / "astro_display_").string();
+    FILE *t = std::fopen((tmp + "wcs_check.txt").c_str(), "w");
+    CHECK(t != nullptr);
+    if (!t)
+        return 1;
     for (int k = 0; k < astro_frame_count(s); ++k) {
-        std::string p = "/tmp/astro_frame" + std::to_string(k) + ".fits";
+        std::string p = tmp + "frame" + std::to_string(k) + ".fits";
         CHECK(astro_save_fits(s, k, p.c_str()) == 1);
         double pts[5][2] = {{0, 0}, {w - 1.0, 0}, {0, h - 1.0}, {w - 1.0, h - 1.0}, {w / 2.0, h / 2.0}};
         for (auto &q : pts) {
